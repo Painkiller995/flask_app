@@ -1,0 +1,167 @@
+{% extends 'base.html' %} {% block title %}About the Developer{% endblock %} {%
+block content %}
+<div
+  class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+>
+  <div class="container position-relative" style="z-index: 1">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4">Hi there 👋</h1>
+        <p class="lead mb-0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row g-5">
+    <div class="col-lg-4">
+      <div class="card border-0 overflow-hidden">
+        <div class="position-relative">
+          <img
+            src="https://avatars.githubusercontent.com/u/61171983?v=4"
+            class="card-img-top"
+            alt="Developer Profile"
+          />
+          <div
+            class="position-absolute bottom-0 start-0 w-100 p-3"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.7),
+                transparent
+              );
+            "
+          >
+            <h3 class="text-white mb-0">Fahd Daher</h3>
+            <p class="text-white-50 mb-0">Software developer</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+            <h5 class="mb-3 d-flex align-items-center text-primary">
+              <i class="bi bi-geo-alt me-2 text-primary"></i>Location
+            </h5>
+            <p class="text-muted mb-0">Stavanger, Norway</p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="mb-3 d-flex align-items-center text-primary">
+              <i class="bi bi-envelope me-2 text-primary"></i> Email
+            </h5>
+            <p class="text-muted mb-0">fahddaher995@gmail.com</p>
+          </div>
+
+          <div>
+            <h5 class="mb-3 d-flex align-items-center text-primary">
+              <i class="bi bi-translate me-2 text-primary"></i> Languages
+            </h5>
+            <p class="text-muted mb-0">Norwegian, English</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <h2 class="section-title">Who Am I?</h2>
+      <p class="lead">
+        I'm a software developer with a passion for building robust applications
+        and exploring cutting-edge technologies. My journey in the world of code
+        has led me to become acquainted with a wide array of languages and
+        tools, allowing me to craft exceptional software solutions.
+      </p>
+      <p>
+        I have a strong grasp of a multitude of programming languages and
+        frameworks, allowing me to confidently address a variety of challenges
+        and devise innovative solution
+      </p>
+
+      <p>
+        I work at Westcontrol as a developer, where I have played a key role in
+        numerous projects aimed at ensuring high production quality across a
+        diverse range of products. Some of the notable products I have worked on
+        include Zaptec, Heimdall, Siemens, and many more.
+      </p>
+
+      <p>
+        While Flask is not one of the tools I use frequently, I primarily work
+        with Next.js, as well as FastAPI and Django.
+      </p>
+
+      <h3 class="section-title">Experience</h3>
+      <div class="timeline">
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i
+                  class="bi bi-briefcase-fill text-primary"
+                  style="font-size: 2rem"
+                ></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-primary">
+                <h5>New Product Implementing Technician</h5>
+                <p class="text-muted mb-1">Westcontrol AS</p>
+                <p class="text-muted mb-2">2024 - Present</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-muted">
+                    ✔ Integrating new products into production processes.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Developed software and web applications for test benches
+                    that logged results and generated necessary labeling.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Ensuring high quality and cost efficiency through careful
+                    component development.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Preventing errors and ensuring seamless product outcomes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i
+                  class="bi bi-briefcase-fill text-primary"
+                  style="font-size: 2rem"
+                ></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-primary">
+                <h5>AOI/SMT Programmer-Operator</h5>
+                <p class="text-muted mb-1">Westcontrol AS</p>
+                <p class="text-muted mb-2">2021 - 2023</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-muted">
+                    ✔ Program SMT and AOI machines.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Simulate, optimize, and troubleshoot AOI/SMT programs.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Perform maintenance on the machines.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Participate in the development of new products and
+                    production processes.
+                  </li>
+                  <li class="list-group-item text-muted">
+                    ✔ Assemble SMD components.
+                  </li>
+                  <li class="list-group-item text-muted">✔ Rework.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

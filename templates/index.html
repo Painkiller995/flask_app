@@ -1,0 +1,259 @@
+{% extends 'base.html' %} {% block title %}Flask - Home{% endblock %} {% block
+content %}
+
+<div
+  class="hero-section position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+>
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-4">Build Web Apps Faster with Flask</h1>
+        <p class="lead mb-4">
+          A lightweight, flexible Python web framework designed for rapid
+          development
+        </p>
+        <div class="d-flex gap-3 justify-content-center mt-5">
+          <a
+            href="https://flask.palletsprojects.com/"
+            target="_blank"
+            class="btn btn-light btn-lg"
+          >
+            <i class="bi bi-book me-2"></i>Documentation
+          </a>
+          <a
+            href="https://github.com/pallets/flask"
+            target="_blank"
+            class="btn btn-outline-light btn-lg"
+          >
+            <i class="bi bi-github me-2"></i>GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="text-center">
+          <img
+            src="{{ url_for('static', filename='icon/flask.svg') }}"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mb-5">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 text-center p-4">
+        <div class="feature-icon">
+          <i class="bi bi-lightbulb"></i>
+        </div>
+        <h3 class="text-primary">Lightweight</h3>
+        <p class="text-muted">
+          Flask is a micro-framework that keeps the core simple but extensible.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 text-center p-4">
+        <div class="feature-icon">
+          <i class="bi bi-gear"></i>
+        </div>
+        <h3 class="text-primary">Flexible</h3>
+        <p class="text-muted">
+          Flask gives you freedom to structure your application how you want.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 text-center p-4">
+        <div class="feature-icon">
+          <i class="bi bi-lightning"></i>
+        </div>
+        <h3 class="text-primary">Rapid Development</h3>
+        <p class="text-muted">
+          Get your web application up and running in minutes, not hours.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-7">
+      <h2 class="section-title">What is Flask?</h2>
+      <p>
+        Flask is a micro web framework written in Python. It is classified as a
+        microframework because it does not require particular tools or
+        libraries. It has no database abstraction layer, form validation, or any
+        other components where pre-existing third-party libraries provide common
+        functions.
+      </p>
+
+      <div class="card mt-4 mb-4">
+        <div class="card-body">
+          <h3 class="card-title text-primary mb-4">Key Features</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i
+                  class="bi bi-check-circle-fill text-success me-3 mt-1"
+                  style="font-size: 1.25rem"
+                ></i>
+                <div>
+                  <h5 class="text-primary">Built-in Development Server</h5>
+                  <p class="text-muted">
+                    Flask comes with a built-in development server and debugger.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i
+                  class="bi bi-check-circle-fill text-success me-3 mt-1"
+                  style="font-size: 1.25rem"
+                ></i>
+                <div>
+                  <h5 class="text-primary">RESTful Request Dispatching</h5>
+                  <p class="text-muted">
+                    Flask supports RESTful request dispatching.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i
+                  class="bi bi-check-circle-fill text-success me-3 mt-1"
+                  style="font-size: 1.25rem"
+                ></i>
+                <div>
+                  <h5 class="text-primary">Jinja2 Templating</h5>
+                  <p class="text-muted">
+                    Flask uses Jinja2 templating engine for dynamic HTML.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i
+                  class="bi bi-check-circle-fill text-success me-3 mt-1"
+                  style="font-size: 1.25rem"
+                ></i>
+                <div>
+                  <h5 class="text-primary">Secure Cookies</h5>
+                  <p class="text-muted">
+                    Flask supports secure cookies to maintain client-side
+                    sessions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title">Getting Started with Flask</h3>
+      <p>Getting started with Flask is easy. Here's a simple example:</p>
+      <pre class="p-4 rounded"><code>
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+            </code></pre>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="mb-4 text-primary">Why Choose Flask?</h3>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-3 d-flex align-items-center">
+              <i
+                class="bi bi-arrow-right-circle-fill text-primary me-3"
+                style="font-size: 1.25rem"
+              ></i>
+              <span>Perfect for small to medium web applications</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i
+                class="bi bi-arrow-right-circle-fill text-primary me-3"
+                style="font-size: 1.25rem"
+              ></i>
+              <span>Ideal for APIs and microservices</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i
+                class="bi bi-arrow-right-circle-fill text-primary me-3"
+                style="font-size: 1.25rem"
+              ></i>
+              <span>Great for prototyping and MVPs</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i
+                class="bi bi-arrow-right-circle-fill text-primary me-3"
+                style="font-size: 1.25rem"
+              ></i>
+              <span>Excellent for learning web development</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i
+                class="bi bi-arrow-right-circle-fill text-primary me-3"
+                style="font-size: 1.25rem"
+              ></i>
+              <span>Provides flexibility for custom architectures</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="mb-4 text-primary">Flask Resources</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-book-half me-3 text-primary"></i>
+              <a href="https://flask.palletsprojects.com/" target="_blank"
+                >Official Documentation</a
+              >
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-github me-3 text-primary"></i>
+              <a href="https://github.com/pallets/flask" target="_blank"
+                >GitHub Repository</a
+              >
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-journal-code me-3 text-primary"></i>
+              <a
+                href="https://flask.palletsprojects.com/en/2.0.x/tutorial/"
+                target="_blank"
+                >Flask Tutorial</a
+              >
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-box-seam me-3 text-primary"></i>
+              <a href="https://pypi.org/project/Flask/" target="_blank"
+                >PyPI Package</a
+              >
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-people-fill me-3 text-primary"></i>
+              <a href="https://discord.gg/pallets" target="_blank"
+                >Community Discord</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
